@@ -1,0 +1,29 @@
+{
+  "name": "@behaver/precession",
+  "version": "1.0.0",
+  "description": "calculate precession.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@behaver/angle": "^2.0.0",
+    "@behaver/jdate": "^2.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "precession"
+  ],
+  "author": "Sanwan Dong",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behaver/precession.git"
+  }
+}
