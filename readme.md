@@ -24,10 +24,10 @@ let jdr = new JDateRepository(new Date('1992/8/15 08:25:12'), 'date');
 let precession = new PrecessionIAU2006(jdr);
 
 // 岁差计算项 ε 的数值
-console.log(precession.E);
+console.log(precession.epsilon);
 
-// 岁差计算项 ωA 的数值
-console.log(precession.w);
+// 岁差计算项 ω 的数值
+console.log(precession.omega);
 ```
 
 ## 类图
