@@ -7,7 +7,6 @@
     "test": "test"
   },
   "dependencies": {
-    "@behaver/angle": "^2.0.0",
     "@behaver/jdate": "^2.0.2"
   },
   "devDependencies": {

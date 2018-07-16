@@ -257,14 +257,4 @@ describe('#PrecessionIAU2000', () => {
       expect(z_old).not.equal(p.z);
     })
   })
-
-  describe('verify', () => {
-    it('《天文算法》P109 例20.b', () => {
-      let jdr = new JDateRepository(2462088.69);
-      let p = new PrecessionIAU2000(jdr);
-
-      expect(p.z - 665.8288).to.lt(0.0001);
-      expect(p.theta - 578.5489).to.lt(0.0001);
-    })
-  })
 });

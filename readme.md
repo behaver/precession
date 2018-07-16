@@ -1,5 +1,7 @@
 # Precession 组件库
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](#) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/@behaver/precession) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#)
+
 ## 简介
 
 Precession 组件库用于计算天文学中的地球岁差运动，它包含组件：PrecessionIAU1976、PrecessionIAU2000 和 PrecessionIAU2006 ，它们分别是以 IAU1976、IAU2000 和 IAU2006 作为岁差计算模型。Precession 组件共用了同一组给定的 API，这组 API 由基类 PrecessionBase 给定，用户可基于 PrecessionBase 对模型组件进行扩展。

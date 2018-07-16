@@ -263,9 +263,9 @@ describe('#PrecessionIAU1976', () => {
       let jdr = new JDateRepository(2462088.69);
       let p = new PrecessionIAU1976(jdr);
 
-      expect(p.zeta - 665.7627).to.lt(0.0001);
-      expect(p.z - 665.8288).to.lt(0.0001);
-      expect(p.theta - 578.5489).to.lt(0.0001);
+      expect(p.zeta).to.closeTo(665.7627, 0.0001);
+      expect(p.z).to.closeTo(665.8288, 0.0001);
+      expect(p.theta).to.closeTo(578.5489, 0.0001);
     })
   })
 });
