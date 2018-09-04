@@ -49,7 +49,8 @@ class PrecessionBase {
    * @return {Number}              计算结果
    */
   get(key) {
-    if (key in this.seqs) {
+    if (key === 'epsilon0') return this.seqs['epsilon'][0];
+    else if (key in this.seqs) {
       if (!this.cache.has(key)) {
         this.cache.set(key, this.calc(key));
       }
@@ -94,7 +95,7 @@ class PrecessionBase {
   /**
    * 获取 岁差计算项 Q 的数值
    *
-   * 黄道岁差 Q = sin(pi) * cos(II)
+   * 黄道岁差 Q = sin(pi) * cos(Π)
    * 单位：角秒
    *
    * @return {Number}              Q 的数值
@@ -134,6 +135,17 @@ class PrecessionBase {
    */
   get p() {
     return this.get('p');
+  }
+
+  /**
+   * 获取 岁差计算项 ε0 的数值
+   *
+   * 单位：角秒
+   *
+   * @return {Number}              ε0 的数值
+   */
+  get epsilon0() {
+    return this.get('epsilon0');
   }
 
   /**

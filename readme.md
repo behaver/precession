@@ -63,6 +63,10 @@ console.log(precession.omega);
 `get p()`
 获取 岁差计算项 p 的数值，单位：角秒。
 
+`get epsilon0()`
+获取 岁差计算项 ε0 的数值，单位：角秒。
+岁差项 ε0(epsilon) 为 J2000 历元的黄赤交角。
+
 `get epsilon()`
 获取 岁差计算项 ε 的数值，单位：角秒。
 岁差项 ε(epsilon) 为黄赤交角。
