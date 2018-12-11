@@ -42,7 +42,7 @@ console.log(precession.omega);
 构造函数:
 
 * epoch 儒略时间仓库 对象
-* model 计算模型
+* model 计算模型, 包含: iau1976, iau2000 和 iau2006
 
 `set epoch(value)`
 
@@ -54,7 +54,7 @@ console.log(precession.omega);
 
 `set model(value)`
 
-设置 计算模型字串
+设置 计算模型字串, 包含: iau1976, iau2000 和 iau2006
 
 `get model()`
 
