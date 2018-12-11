@@ -4,7 +4,7 @@
 
 ## 简介
 
-Precession 组件库用于计算天文学中的地球岁差运动，它包含组件：PrecessionIAU1976、PrecessionIAU2000 和 PrecessionIAU2006 ，它们分别是以 IAU1976、IAU2000 和 IAU2006 作为岁差计算模型。Precession 组件共用了同一组给定的 API，这组 API 由基类 PrecessionBase 给定，用户可基于 PrecessionBase 对模型组件进行扩展。
+Precession 组件库用于计算天文学中的地球岁差运动，它包含计算模型: IAU1976、IAU2000 和 IAU2006 作为岁差。
 
 Precession 系列组件的使用依赖于 [JDateRepository](https://github.com/behaver/jdate/blob/master/doc/JDateRepository.md)
 
@@ -16,10 +16,10 @@ Precession 系列组件的使用依赖于 [JDateRepository](https://github.com/b
 
 ---
 
-使用 PrecessionIAU2006 组件计算岁差项：
+使用 Precession 组件计算岁差项：
 
 ```js
-const { PrecessionIAU2006 } = require('@behaver/precession');
+const Precession = require('@behaver/precession');
 const { JDateRepository } = require('@behaver/jdate');
 
 let jdr = new JDateRepository(new Date('1992/8/15 08:25:12'), 'date');
