@@ -10,7 +10,6 @@ const IAU2006Seqs = require('./data/IAU2006');
  *
  * Precession 是IAU岁差计算组件。
  *
- * @private
  * @author 董 三碗 <qianxing@yeah.net>
  * @version 2.0.0
  * @license MIT
@@ -73,9 +72,11 @@ class Precession {
         case 'iau1976':
           this.seqs = IAU1976Seqs;
           break;
+
         case 'iau2000':
           this.seqs = IAU2000Seqs;
           break;
+          
         case 'iau2006': 
           this.seqs = IAU2006Seqs;
           break;
