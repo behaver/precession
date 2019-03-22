@@ -1,6 +1,6 @@
 {
   "name": "@behaver/precession",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "calculate precession.",
   "main": "index.js",
   "directories": {
